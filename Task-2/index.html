@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmayee Choudhury</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: unset;
+        }
+        header{
+            background-color: rgb(178, 237, 214);
+        }
+        header a:hover{
+            color: rgb(11, 107, 61);
+        }
+        #home{
+            height: 500px;
+            font-size: 47px;
+
+        }
+        #btncontact{
+            width: 150px;
+            font-size: 19px;
+        }
+        #about{
+            height: 500px;
+        }
+        #skills{
+            height: 500px;
+        }
+        #works{
+            height: 700px;
+        }
+        footer{
+            height: 300px;
+            background-color: rgb(156, 234, 204);
+        }
+        footer a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <header class="p-3 d-flex justify-content-around position-sticky top-0">
+        <div class="w-75 d-flex justify-content-between">
+            <div class="fs-4 fw-bold"><a href="javascript:void()" style="color:black">CHINMAYEE</a></div>
+            <div class="">
+                <span class="fs-5 me-4 fw-bold"><a href="#home">Home</a></span>
+                <span class="fs-5 me-4 fw-bold"><a href="#about">About</a></span>
+                <span class="fs-5 me-4 fw-bold"><a href="#skills">Skills</a></span>
+                <span class="fs-5 me-4 fw-bold"><a href="#works">Work</a></span>
+                <span class="fs-5  fw-bold"><a href="#contact">Contact</a></span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="home" class="d-flex justify-content-center flex-column fw-bold">
+            <div class="row ms-0 me-0">
+                <div class="col-5 d-flex justify-content-center">
+                    <img src="images/main.jpg" width="450px" alt="">
+                </div>
+                <div class="col">
+                    <div>Hii</div>
+                    <div>I'am <span class="text-success">Chinmayee</span></div>
+                    <div>FrontEnd Developer</div>
+                    <button id="btncontact" class="btn btn-success fw-bold mt-5">Contact</button>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="d-flex  flex-column align-items-center">
+            <div align="center" class="fw-bold text-success fs-3 mt-5 pt-4">About</div>
+            <div class="w-75 pb-4 mt-5">
+                <div class="fw-bold fs-5 mb-3">I'am Chinmayee</div>
+                <p>Looking forward making professional software developer in the IT industry where my skills and knowledge can be well utilized for the betterment of the organisation and my personal growth as well.</p>
+                <div class="mt-5">
+                    <img width="260px" height="210px" src="images/HTML5.png" alt="">
+                    <img width="200px" height="200px" class="me-2" src="images/CSS3.png" alt="">
+                    <img width="200px" height="200px"  src="images/Bootstrap.png" alt="">
+                    <img width="200px" height="200px" src="images/SASS.png" alt="">
+                    <img width="230px" height="200px" src="images/javascript.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <div id="skills" class="d-flex justify-content-center align-items-center flex-column">
+            <div align="center" class="fw-bold text-success fs-3 mt-5 mb-5 pt-5 ">Skills</div>
+            <div class="row w-75">
+                <div class="col d-flex align-items-center">
+                    <img src="images/work-1.png" width="450px" height="200px" alt="">
+                </div>
+                <div class="col">
+                    <div class="fw-bold fw-5 mb-2">Professional Skills</div>
+                    <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis libero iste velit praesentium vero accusamus illum, dolor modi labore, possimus rerum at molestiae illo itaque, totam quam repudiandae quidem assumenda consectetur cupiditate commodi ab quibusdam excepturi error.</p>
+                    <div class="mt-2">
+                        <ul class="list-unstyled mt-3 fw-bold pt-2">
+                            <li class="mb-2"><img src="images/HTML5.png" width="45px" height="25px" alt="" style="margin-left: -5px;">Html</li>
+                            <li class="mb-2"><img src="images/CSS3.png" width="35px" height="25px" alt=""> CSS</li>
+                            <li class="mb-2"><img src="images/Bootstrap.png" width="35px" height="25px" alt=""> bootstrap</li>
+                            <li class="mb-2"><img src="images/SASS.png" width="35px" height="25px" alt=""> SASS</li>
+                            <li class="mb-2"><img src="images/javascript.png" width="35px" height="25px" alt=""> JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="works" class="d-flex justify-content-center flex-column align-items-center pt-3">
+            <div align="center" class="fw-bold text-success fs-3 mt-5 mb-5 pt-4">Works</div>
+            <div class="w-75 row">
+                <div class="col-4 mt-5 rounded rounded-4 border overflow-hidden" style="height: 200px;"><a href="javascript:void()"><img src="images/work-1.png" width="100%" height="100%" alt=""></a></div>
+                <div class="col-4 mt-5 rounded rounded-4 border overflow-hidden" style="height: 200px;"><a href="javascript:void()"><img src="images/work-2.png" width="100%" height="100%" alt=""></a></div>
+                <div class="col-4 mt-5 rounded rounded-4 border overflow-hidden" style="height: 200px;"><a href="javascript:void()"><img src="images/work-3.png" width="100%" height="100%" alt=""></a></div>
+                <div class="col-4 mt-5 rounded rounded-4 border overflow-hidden" style="height: 200px;"><a href="javascript:void()"><img src="images/work-4.png" width="100%" height="100%" alt=""></a></div>
+                <div class="col-4 mt-5 rounded rounded-4 border overflow-hidden" style="height: 200px;"><a href="javascript:void()"><img src="images/work-5.png" width="100%" height="100%" alt=""></a></div>
+                <div class="col-4 mt-5 rounded rounded-4 border overflow-hidden" style="height: 200px;"><a href="javascript:void()"><img src="images/work-6.png" width="100%" height="100%" alt=""></a></div>
+            </div>
+        </div>
+        <div id="contact" class="d-flex justify-content-center align-items-center flex-column pt-2 pb-5">
+            <div class="w-25">
+                <div align="center" class="fw-bold text-success fs-3 mt-5 mb-5 pt-4">Contact</div>
+                <div class="p-3 border border-success rounded rounded-4">
+                    <input type="text" class="form-control mb-4" placeholder="Your Name">
+                    <input type="email" class="form-control mb-4" placeholder="Your Mail">
+                    <textarea cols="30" rows="10" class="form-control mb-4" placeholder="Your Query"></textarea>
+                    <button class="btn btn-success w-100 mb-2">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class=" d-flex justify-content-center flex-column shadow align-items-center">
+        <div class="w-75 d-flex justify-content-around">
+            <a href="javascript:void()"><span class="fs-2 bi bi-facebook"></span></a>
+            <a href="javascript:void()"><span class="fs-2 bi bi-whatsapp"></span></a>
+            <a href="javascript:void()"><span class="fs-2 bi bi-instagram"></span></a>
+            <a href="javascript:void()"><span class="fs-2 bi bi-twitter-x"></span></a>
+            <a href="javascript:void()"><span class="fs-2 bi bi-github"></span></a>
+            <a href="javascript:void()"><span class="fs-2 bi bi-linkedin"></span></a>
+        </div>
+        <div align="center" class="mt-5 fw-medium fs-5">Copyright &copy;2024 All rights reserved | This template is made with <span class="bi bi-heart-fill text-success"></span> by <a id="owner" class="text-black" href="javascript:void()">Chinmayee Choudhury</a></div>
+    </footer>
+</body>
+</html>
