@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tempreture Converter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url("https://wessexcare.com/images/news/tips-for-keeping-your-elderly-relatives-cool-in-hot-weather.jpg");
+            background-size: cover;
+        }
+        .container{
+            background-color: rgb(195, 205, 205);
+            border-radius: 8px;
+            box-shadow:0px 0px 10px 5px rgb(21, 21, 228);
+            padding: 20px;
+        }
+        #input_container{
+            display: flex;
+        }
+        h1{
+            color: rgb(19, 134, 229);
+            font-size: 40px;
+        }
+        #celcius,#fahrenheit,#kelvin{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            color: rgb(19, 134, 229);
+        }
+        input{
+            height: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(245, 116, 4);
+            border-top: unset;
+            border-left: unset;
+            border-right: unset;
+            background-color: unset ;
+            outline: none;
+            margin: 15px;
+        }
+        .icon{
+            height: 50px;
+            width: 50px;
+            padding: 5px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            background-color: transparent;
+            box-shadow: 0px 0px 70px blue;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+</body>
+<div class="container">
+    <div class="title" align="center">
+        <h1>Tempreture Converter</h1>
+    </div>
+    <div id="input_container">
+        <div id="celcius">
+            <span class="icon">&#8451</span>
+            <input type="number" placeholder="Enter Celcius">
+        </div>
+        <div id="fahrenheit">
+            <span class="icon">&#8457</span>
+            <input type="number" placeholder=" Enter Fahrenheit">
+        </div>
+        <div id="kelvin">
+            <span class="icon">&#8490</span>
+            <input type="number" placeholder="Enter Kelvin">
+        </div>
+    </div>
+</div>
+<script>
+    let celciusInput = document.querySelector('#celcius > input')
+let fahrenheitInput = document.querySelector('#fahrenheit > input')
+let kelvinInput = document.querySelector('#kelvin > input')
+function roundNumber(number){
+    return Math.round(number*100/100)
+}
+celciusInput.addEventListener('input',function(){
+
+    let cTemp = parseFloat(celciusInput.value)
+    let fTemp = (cTemp*(9/5)) + 32
+    let kTemp = cTemp + 273.15
+
+    fahrenheitInput.value = roundNumber(fTemp)
+    kelvinInput.value = roundNumber (kTemp)
+})
+fahrenheitInput.addEventListener('input',function(){
+
+    let fTemp = parseFloat(fahrenheitInput.value)
+    let cTemp = (fTemp - 32) * (5/9)
+    let kTemp = (fTemp -32 ) * (5/9) + 273.15
+
+    celciusInput.value = roundNumber(cTemp)
+    kelvinInput.value = roundNumber (kTemp)
+})
+kelvinInput.addEventListener('input',function(){
+
+    let kTemp = parseFloat(kelvinInput.value)
+    let cTemp = kTemp - 273.15
+    let fTemp = (kTemp - 273.15) * (9/5) + 32
+
+    celciusInput.value = roundNumber(cTemp)
+    fahrenheitInput.value = roundNumber (fTemp)
+})
+</script>
+<body>
+</html
